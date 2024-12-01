@@ -5,8 +5,9 @@ import pickle
 import requests
 
 # Spotify API credentials
-client_id = "c578f022bd454623ada8953a4c75184b"
-client_secret = "4a9b8a8bfb3540f79f5ae5c6a0b151e5"
+client_id =st.secrets["spotify"]["client_id"]
+client_secret =st.secrets["spotify"]["client_secret"]
+
 
 
 def get_spotify_token(client_id, client_secret):
